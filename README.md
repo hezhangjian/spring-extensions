@@ -1,12 +1,14 @@
-# [Project Name]
+# Spring Extensions
 
-Do whatever you want with this template, typically used to create a new project.
+![License](https://img.shields.io/badge/license-Apache2.0-green) ![Language](https://img.shields.io/badge/language-Java-blue.svg) [![version](https://img.shields.io/github/v/tag/hezhangjian/spring-extensions?label=release&color=blue)](https://github.com/hezhangjian/spring-extensions/releases)
 
-## Variables
+`Spring Extensions` is a collection of small, reusable extensions and utilities for Spring and Spring Boot applications.
 
-> You can globally replace `[Variable Name]` with the value of your project.
+## Prerequisites
 
-- [Author Name]: Name of the author
-- [Author Email]: Email of the author
-- [ORG Name]: Name of the organization or username
-- [Project Name]: Name of the project
+- Java 17 or higher
+- Spring Boot 3.x or Spring Framework 6.x
+
+## Modules
+
+- **spring-scheduled-extension**: Provides the `ProfileScheduled` annotation for profile-specific scheduling, combining Spring's `@Profile` and `@Scheduled` annotations.
