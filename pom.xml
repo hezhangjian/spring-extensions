@@ -1,17 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2025 hezhangjian <hezhangjian97@gmail.com>
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hezhangjian</groupId>
-    <artifactId>java-maven-multi-module-template</artifactId>
+    <artifactId>spring-extensions-parent</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <modules>
+        <module>spring-scheduled-extension</module>
+    </modules>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>src/main/java</src.dir>
         <jacoco.overall.exec>${maven.multiModuleProjectDirectory}/target/jacoco/jacoco.exec</jacoco.overall.exec>
@@ -19,6 +37,8 @@
         <annotations.version>13.0</annotations.version>
         <junit.version>5.12.0</junit.version>
         <lombok.version>1.18.36</lombok.version>
+        <spring.version>6.1.14</spring.version>
+        <springboot.version>3.2.9</springboot.version>
         <!-- plugin -->
         <central-publishing-maven-plugin.version>0.7.0</central-publishing-maven-plugin.version>
         <lombok-maven-plugin.version>1.18.20.0</lombok-maven-plugin.version>
@@ -230,7 +250,7 @@
         </plugins>
     </build>
 
-    <url>https://github.com/[ORG Name]/[Project Name]</url>
+    <url>https://github.com/hezhangjian/spring-extensions</url>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -239,21 +259,21 @@
     </licenses>
 
     <organization>
-        <name>[ORG Name]</name>
-        <url>https://github.com/[ORG Name]</url>
+        <name>hezhangjian</name>
+        <url>https://github.com/hezhangjian</url>
     </organization>
 
     <developers>
         <developer>
-            <name>[Author Name]</name>
-            <email>[Author Email]</email>
+            <name>hezhangjian</name>
+            <email>hezhangjian97@gmail.com</email>
         </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git@github.com:[ORG Name]/[Project Name].git</connection>
-        <developerConnection>scm:git:git@github.com:[ORG Name]/[Project Name].git</developerConnection>
-        <url>git@github.com:[ORG Name]/[Project Name].git</url>
+        <connection>scm:git:git@github.com:hezhangjian/spring-extensions.git</connection>
+        <developerConnection>scm:git:git@github.com:hezhangjian/spring-extensions.git</developerConnection>
+        <url>git@github.com:hezhangjian/spring-extensions.git</url>
         <tag>HEAD</tag>
     </scm>
 

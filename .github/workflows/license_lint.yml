@@ -12,19 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name: Commit Lint
+name: License Lint
 on:
   pull_request:
     branches:
       - main
-
-permissions:
-  contents: read
-  pull-requests: read
-
 jobs:
-  commitlint:
+  build:
+    name: license lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: wagoid/commitlint-github-action@v6
+      - name: licenselint
+        uses: hezhangjian/licenselint@main
+        with:
+          author: hezhangjian
+          email: hezhangjian97@gmail.com
