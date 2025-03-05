@@ -24,6 +24,8 @@
     <version>0.1.0</version>
     <packaging>pom</packaging>
     <modules>
+        <module>spring-boot-extension-examples</module>
+        <module>spring-boot-scheduled-extension-starter</module>
         <module>spring-scheduled-extension</module>
     </modules>
 
